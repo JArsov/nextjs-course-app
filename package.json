@@ -1,19 +1,23 @@
 {
   "dependencies": {
-    "@theme-ui/presets": "^0.3.0",
+    "@theme-ui/presets": "^0.3.5",
     "body-parser": "^1.19.0",
     "dotenv-load": "^2.0.0",
     "next": "^10.0.5",
-    "next-connect": "^0.8.1",
+    "next-connect": "^0.9.1",
     "next-env": "^1.1.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "theme-ui": "^0.3.1"
+    "theme-ui": "^0.3.5"
   },
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@types/node": "^14.14.20",
+    "@types/react": "^17.0.0",
+    "typescript": "^4.1.3"
+  }
 }
