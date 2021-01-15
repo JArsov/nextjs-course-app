@@ -6,7 +6,6 @@ import Link from 'next/link'
 import { jsx } from 'theme-ui'
 
 const Nav = () => {
-  console.log(process.env);
   return (
   // sx is equal to writing css={{}} with added access to the theme and the ability to use shortcuts
   // (e.g. bg for background-color)

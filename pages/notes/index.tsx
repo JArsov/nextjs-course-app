@@ -2,11 +2,11 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 
+import { INote } from '../../src/data/data'
 import Link from 'next/link'
 import { jsx } from 'theme-ui'
 
-const Note = () => {
-  const notes = new Array(15).fill(1).map((_, i) => ({id: i, title: `This is my note ${i}`}))
+const Note = ({ notes } : { notes: INote[]}) => {
 
   return (
     <div sx={{variant: 'containers.page'}}>
@@ -27,6 +27,17 @@ const Note = () => {
       </div>
     </div>
   )
+}
+
+export const getServerSideProps = async () => {
+  const res = await fetch(`http://localhost:3000/api/notes`);
+  const { data } = await res.json() as { data: INote[] };
+
+  return {
+    props: {
+      notes: data
+    }
+  }
 }
 
 export default Note;
