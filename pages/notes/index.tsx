@@ -30,7 +30,7 @@ const Note = ({ notes } : { notes: INote[]}) => {
 }
 
 export const getServerSideProps = async () => {
-  const res = await fetch(`${process.env.API_URL}/api/notes`);
+  const res = await fetch(`${process.env.API_URL}/notes`);
   const { data } = await res.json() as { data: INote[] };
 
   return {
