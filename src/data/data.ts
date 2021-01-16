@@ -6,8 +6,8 @@ export interface INote {
 const notes: Array<INote> = new Array(15)
   .fill(1)
   .map((_, i) => ({
-    id: Date.now() + i,
-    title: `Note ${i}`
+    id: i + 1,
+    title: `Note ${i + 1}`
   }));
 
 export default notes;

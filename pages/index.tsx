@@ -17,7 +17,7 @@ export const getStaticProps = () => {
   return {
     props: {
       content: {
-        title: 'This is my really nice appppppppppppp'
+        title: 'Have a look at my note app'
       }
     }
   }

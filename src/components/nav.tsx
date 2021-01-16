@@ -19,7 +19,7 @@ const Nav = () => {
         <a sx={{color: 'text', fontSize: 3, cursor: 'pointer'}}>notes</a>
       </Link>
 
-      <a href={process.env.HELP_APP_URL} target="_blank" sx={{
+      <a href='https://github.com/JArsov' target="_blank" sx={{
           color: 'text',
           fontSize: 3,
           cursor: 'pointer'
