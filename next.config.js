@@ -31,7 +31,7 @@ const withEnv = nextEnv(); // This command creates the next config with the env 
 /**
  {
   env: {
-    HELP_APP_URL: https://github.com/JArsov
+    API_URL: http://localhost:3000/api
   }
  }
  */
